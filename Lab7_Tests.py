@@ -3,12 +3,12 @@
 # Import the pytest library
 import pytest
 
-# As you add functions to Lab7.py, import them here (uncomment the lines)
-# from Lab7 import calculate_rectangle_area
-# from Lab7 import calculate_hypotenuse
-# from Lab7 import is_even
-# from Lab7 import find_maximum
-# from Lab7 import grade_calculator
+# As you add functions to Lab6.py, import them here (uncomment the lines)
+from Lab7 import calculate_rectangle_area
+from Lab7 import calculate_hypotenuse
+from Lab7 import is_even
+from Lab7 import find_maximum
+from Lab7 import grade_calculator
 
 # Example test cases
 
@@ -20,7 +20,6 @@ def test_rectangle_area():
     assert calculate_rectangle_area(0, 0) == 0
     assert calculate_rectangle_area(10, 20) == 200
 
-
 # Test cases for the Pythagorean theorem
 def test_pythagorean_theorem():
     assert calculate_hypotenuse(3, 4) == 5
@@ -31,10 +30,10 @@ def test_pythagorean_theorem():
 
 # Test cases for checking if a number is even
 def test_is_even():
-    assert is_even(2) is True, "Even calculation failed for 2"
-    assert is_even(7) is False, "Even calculation failed for 7"
-    assert is_even(0) is True, "Even calculation failed for 0"
-    assert is_even(11) is False, "Even calculation failed for 11"
+    assert is_even(2) is True, "Even number check failed for 2"
+    assert is_even(7) is False, "Even number check failed for 7"
+    assert is_even(0) is True, "Even number check failed for 0"
+    assert is_even(10) is True, "Even number check failed for 10"
 
 
 # Test cases for finding the maximum of two numbers
